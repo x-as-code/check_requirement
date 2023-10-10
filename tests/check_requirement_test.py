@@ -1,4 +1,4 @@
-# usage: pytest check_requirement_test.py
+# usage: pytest check_requirement_test.py -rP
 
 import pytest
 
@@ -12,8 +12,8 @@ class Test_CheckRequirement:
     def test_name(self):
         checker = CheckRequirement(nlp = "nlp", name = "n", config = "c")
 
-        #ret = checker.getname()
-        assert "n" == "n"
+        ret = checker.getname()
+        assert "n" == ret
 
     def test_config(self):
         checker = CheckRequirement(nlp = "nlp", name = "n", config = "c")
@@ -31,7 +31,6 @@ class Test_CheckRequirement:
                     )
         doc = nlp("We went into Yellowstone Park in Wyoming.")
 
-        print("66666666")
         print(doc.user_data)
         assert "c" == "c"
 

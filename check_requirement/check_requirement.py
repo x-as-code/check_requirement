@@ -5,9 +5,9 @@ import spacy
 class CheckRequirement:
 
     def __init__(self, nlp, name, config):
-        #self.nlp = nlp
-        #self.name = name
-        self.local_config = config
+        self.nlp = nlp
+        self.name = name
+        self.config = config
 
     def __call__(self, doc):
         my_user_data = {}
@@ -16,7 +16,7 @@ class CheckRequirement:
         return doc
 
     def getconfig(self):
-        return self.local_config
+        return self.config
 
-    #def getname(self):
-    #    return self.name
+    def getname(self):
+        return self.name
