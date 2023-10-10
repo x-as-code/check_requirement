@@ -1,0 +1,22 @@
+[project]
+name = "SpaCy_check_requirement"
+version = "0.0.1"
+authors = [
+  { name="X-As-Code", email="admin@x-as-code.org" },
+]
+description = "SpaCy script to evaluate doc object with requirement rules"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://x-as-code.org"
+"Bug Tracker" = "https://github.com/x-as-code"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
