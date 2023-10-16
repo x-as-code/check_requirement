@@ -4,7 +4,22 @@ import pytest
 
 import spacy
 
+from check_requirement import CheckRequirement
+
+
 class Test_CheckRequirement:
+
+    def test_name(self):
+        checker = CheckRequirement(nlp = "nlp", name = "n", config = "c")
+
+        ret = checker.getname()
+        assert "n" == ret
+
+    def test_config(self):
+        checker = CheckRequirement(nlp = "nlp", name = "n", config = "c")
+
+        ret = checker.getconfig()
+        assert "c" == ret
 
     def test_CheckActive(self):
         nlp = spacy.load("en_core_web_lg")
