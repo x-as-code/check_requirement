@@ -1,6 +1,6 @@
 [project]
 name = "SpaCy_check_requirement"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="X-As-Code", email="admin@x-as-code.org" },
 ]
@@ -16,6 +16,10 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://x-as-code.org"
 "Bug Tracker" = "https://github.com/x-as-code"
+
+[tool.poetry.dependencies]
+python = ">=3.7.0,<4.0"
+spacy = ">=3.0,<4.0"
 
 [build-system]
 requires = ["setuptools>=61.0"]
